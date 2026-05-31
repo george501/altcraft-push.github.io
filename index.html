@@ -187,6 +187,7 @@
         .gallery-dots {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 10px;
             margin-top: 18px;
         }
@@ -315,6 +316,7 @@
         <div class="logo">Lingua<span>Lab</span></div>
         <div class="nav">
             <a href="#teachers">Преподаватели</a>
+            <a href="#gallery">Галерея</a>
             <a href="#form">Записаться</a>
             <a href="#contact">Контакты</a>
         </div>
@@ -376,81 +378,56 @@
             </div>
         </div>
     </section>
+    
     <section id="gallery" class="section">
         <h2 class="section-title">Галерея</h2>
     
-<div class="gallery">
-    <div class="gallery-slider">
-        <div class="gallery-track">
-            <div class="gallery-slide">
-                <img src="gallery-1.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-2.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-3.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-4.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-5.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-6.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-7.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-8.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-9.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-10.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-11.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-12.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-13.jpg" alt="Фото LinguaLab">
-            </div>
-            <div class="gallery-slide">
-                <img src="gallery-14.jpg" alt="Фото LinguaLab">
-            </div>
-        </div>
-
-        <button class="gallery-button prev" type="button" aria-label="Предыдущее фото">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="gallery-button next" type="button" aria-label="Следующее фото">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
-
-    <div class="gallery-dots">
-        <button class="gallery-dot active" type="button" aria-label="Фото 1"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 2"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 3"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 4"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 5"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 6"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 7"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 8"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 9"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 10"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 11"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 12"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 13"></button>
-        <button class="gallery-dot" type="button" aria-label="Фото 14"></button>
-    </div>
-</div>
+        <div class="gallery">
+            <div class="gallery-slider">
+                <div class="gallery-track">
+                    <div class="gallery-slide">
+                        <img src="gallery-1.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-2.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-3.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-4.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-5.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-6.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-7.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-8.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-9.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-10.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-11.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-12.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-13.jpg" alt="Фото LinguaLab">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="gallery-14.jpg" alt="Фото LinguaLab">
+                    </div>
+                </div>
     
                 <button class="gallery-button prev" type="button" aria-label="Предыдущее фото">
                     <i class="fas fa-chevron-left"></i>
@@ -465,9 +442,20 @@
                 <button class="gallery-dot" type="button" aria-label="Фото 2"></button>
                 <button class="gallery-dot" type="button" aria-label="Фото 3"></button>
                 <button class="gallery-dot" type="button" aria-label="Фото 4"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 5"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 6"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 7"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 8"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 9"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 10"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 11"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 12"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 13"></button>
+                <button class="gallery-dot" type="button" aria-label="Фото 14"></button>
             </div>
         </div>
     </section>
+    
     <section id="form" class="section">
         <div class="form-section">
             <h2>Записаться на пробный урок</h2>
